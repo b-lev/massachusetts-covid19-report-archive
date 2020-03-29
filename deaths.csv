@@ -22,7 +22,7 @@ date,gender,age,county,preexisting,hospitalized
 3/27/2020,Male, 60s, Norfolk county, unknown preexisting condition, hospitalization unknown
 3/27/2020,Female, 90s, Franklin county, unknown preexisting condition, hospitalization unknown
 3/27/2020,Male, 80s, Middlesex county, preexisting conditions, hospitalization unknown
-3/27/2020,Male, 90s, Barnstable county unknown preexisting condition, hospitalized
+3/27/2020,Male, 90s, Barnstable county, unknown preexisting condition, hospitalized
 3/28/2020,Female, 60s, Essex county, preexisting conditions, hospitalized
 3/28/2020,Female, 80s, Suffolk county, preexisting conditions, hospitalized
 3/28/2020,Male, 80s, Worcester county, preexisting conditions, hospitalized
