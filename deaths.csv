@@ -36,3 +36,11 @@ date,gender,age,county,preexisting,hospitalized
 3/29/2020,Female, 90s, Middlesex county, preexisting conditions, hospitalized
 3/29/2020,Female, 70s, Norfolk county, unknown preexisting conditions, hospitalized
 3/29/2020,Female, 80s, Berkshire county, preexisting conditions, not hospitalized
+3/30/2020,Male, 60s, Middlesex county, preexisting conditions, hospitalized
+3/30/2020,Female, 80s, Essex county, preexisting conditions, hospitalized
+3/30/2020,Female, 70s, Norfolk county, unknown preexisting conditions, hospitalized
+3/30/2020,Male, 60s, Essex county, preexisting conditions, hospitalized
+3/30/2020,Female, 70s, Suffolk county, unknown preexisting conditions, hospitalized
+3/30/2020,Female, 70s, Bristol county, preexisting conditions, hospitalized
+3/30/2020,Female, 70s, Middlesex county, preexisting conditions, hospitalized
+3/30/2020,Female, 60s, Suffolk county, unknown preexisting conditions, hospitalized
