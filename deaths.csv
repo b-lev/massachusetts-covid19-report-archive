@@ -1,46 +1,79 @@
 date,gender,age,county,preexisting,hospitalized
-3/25/2020,Male, 80s, Norfolk county, preexisting conditions, hospitalized
-3/25/2020,Male, 80s, Barnstable county, preexisting conditions, hospitalized
-3/25/2020,Male, 70s, Worcester county, unknown preexisting conditions, hospitalized
-3/25/2020,Female, 70s, Worcester county, preexisting conditions, hospitalized
-3/26/2020,Male, 50s, Essex county, preexisting conditions, hospitalized
-3/26/2020,Male, 80s, Essex county, preexisting conditions, hospitalized
-3/26/2020,Male, 80s, Middlesex county, unknown preexisting conditions, hospitalized
-3/26/2020,Male, 70s, Middlesex county, preexisting condition, hospitalization unknown
-3/26/2020,Male, 80s, Hampden county, unknown preexisting conditions, hospitalization unknown
-3/26/2020,Male, 90s, Suffolk county, preexisting conditions, hospitalized
-3/26/2020,Male, 80s, Worcester county, preexisting conditions, hospitalized
-3/26/2020,Female, 70s, Norfolk County, preexisting conditions, hospitalization unknown
-3/26/2020,Male, 80s, Franklin County, unknown preexisting conditions, hospitalization unknown
-3/26/2020,Female, 80s, Middlesex county, preexisting conditions, hospitalized
-3/27/2020,Female, 90s, Bristol county, preexisting conditions, hospitalization unknown
-3/27/2020,Male, 60s, Berkshire county, preexisting conditions, hospitalized
-3/27/2020,Female, 80s, Norfolk county, unknown preexisting condition, hospitalization unknown
-3/27/2020,Female, 80s, Norfolk county, unknown preexisting condition, hospitalized
-3/27/2020,Female, 80s, Norfolk county, preexisting conditions, hospitalization unknown
-3/27/2020,Female, 90s, Berkshire county, unknown preexisting condition, hospitalized
-3/27/2020,Male, 60s, Norfolk county, unknown preexisting condition, hospitalization unknown
-3/27/2020,Female, 90s, Franklin county, unknown preexisting condition, hospitalization unknown
-3/27/2020,Male, 80s, Middlesex county, preexisting conditions, hospitalization unknown
-3/27/2020,Male, 90s, Barnstable county, unknown preexisting condition, hospitalized
-3/28/2020,Female, 60s, Essex county, preexisting conditions, hospitalized
-3/28/2020,Female, 80s, Suffolk county, preexisting conditions, hospitalized
-3/28/2020,Male, 80s, Worcester county, preexisting conditions, hospitalized
-3/28/2020,Female, 80s, Norfolk county, unknown preexisting conditions, hospitalization unknown
-3/28/2020,Male, 70s, Hampden county, preexisting conditions, hospitalized
-3/28/2020,Male, 80s, Hampden county, preexisting conditions, not hospitalized
-3/28/2020,Male, 80s, Norfolk county, unknown preexisting conditions, hospitalization unknown
-3/28/2020,Female, 50s, Worcester county, unknown preexisting condition, hospitalized
-3/28/2020,Female, 90s, Hampden county, unknown preexisting condition, hospitalization unknown
-3/29/2020,Male, 80s, Essex county, unknown preexisting conditions, hospitalized
-3/29/2020,Female, 90s, Middlesex county, preexisting conditions, hospitalized
-3/29/2020,Female, 70s, Norfolk county, unknown preexisting conditions, hospitalized
-3/29/2020,Female, 80s, Berkshire county, preexisting conditions, not hospitalized
-3/30/2020,Male, 60s, Middlesex county, preexisting conditions, hospitalized
-3/30/2020,Female, 80s, Essex county, preexisting conditions, hospitalized
-3/30/2020,Female, 70s, Norfolk county, unknown preexisting conditions, hospitalized
-3/30/2020,Male, 60s, Essex county, preexisting conditions, hospitalized
-3/30/2020,Female, 70s, Suffolk county, unknown preexisting conditions, hospitalized
-3/30/2020,Female, 70s, Bristol county, preexisting conditions, hospitalized
-3/30/2020,Female, 70s, Middlesex county, preexisting conditions, hospitalized
-3/30/2020,Female, 60s, Suffolk county, unknown preexisting conditions, hospitalized
+3/25/2020,Male, 80s, Norfolk county, Yes, Yes
+3/25/2020,Male, 80s, Barnstable county, Yes, Yes
+3/25/2020,Male, 70s, Worcester county, unknown Yes, Yes
+3/25/2020,Female, 70s, Worcester county, Yes, Yes
+3/26/2020,Male, 50s, Essex , Yes, Yes
+3/26/2020,Male, 80s, Essex , Yes, Yes
+3/26/2020,Male, 80s, Middlesex , unknown Yes, Yes
+3/26/2020,Male, 70s, Middlesex , Yes, Unknown
+3/26/2020,Male, 80s, Hampden , unknown Yes, Unknown
+3/26/2020,Male, 90s, Suffolk , Yes, Yes
+3/26/2020,Male, 80s, Worcester , Yes, Yes
+3/26/2020,Female, 70s, Norfolk , Yes, Unknown
+3/26/2020,Male, 80s, Franklin , unknown Yes, Unknown
+3/26/2020,Female, 80s, Middlesex , Yes, Yes
+3/27/2020,Female, 90s, Bristol , Yes, Unknown
+3/27/2020,Male, 60s, Berkshire , Yes, Yes
+3/27/2020,Female, 80s, Norfolk , Unknown, Unknown
+3/27/2020,Female, 80s, Norfolk , Unknown, Yes
+3/27/2020,Female, 80s, Norfolk , Yes, Unknown
+3/27/2020,Female, 90s, Berkshire , Unknown, Yes
+3/27/2020,Male, 60s, Norfolk , Unknown, Unknown
+3/27/2020,Female, 90s, Franklin , Unknown, Unknown
+3/27/2020,Male, 80s, Middlesex , Yes, Unknown
+3/27/2020,Male, 90s, Barnstable , Unknown, Yes
+3/28/2020,Female, 60s, Essex , Yes, Yes
+3/28/2020,Female, 80s, Suffolk , Yes, Yes
+3/28/2020,Male, 80s, Worcester , Yes, Yes
+3/28/2020,Female, 80s, Norfolk , unknown Yes, Unknown
+3/28/2020,Male, 70s, Hampden , Yes, Yes
+3/28/2020,Male, 80s, Hampden , Yes, not Yes
+3/28/2020,Male, 80s, Norfolk , unknown Yes, Unknown
+3/28/2020,Female, 50s, Worcester , Unknown, Yes
+3/28/2020,Female, 90s, Hampden , Unknown, Unknown
+3/29/2020,Male, 80s, Essex , unknown Yes, Yes
+3/29/2020,Female, 90s, Middlesex , Yes, Yes
+3/29/2020,Female, 70s, Norfolk , unknown Yes, Yes
+3/29/2020,Female, 80s, Berkshire , Yes, not Yes
+3/30/2020,Male, 60s, Middlesex , Yes, Yes
+3/30/2020,Female, 80s, Essex , Yes, Yes
+3/30/2020,Female, 70s, Norfolk , unknown Yes, Yes
+3/30/2020,Male, 60s, Essex , Yes, Yes
+3/30/2020,Female, 70s, Suffolk , unknown Yes, Yes
+3/30/2020,Female, 70s, Bristol , Yes, Yes
+3/30/2020,Female, 70s, Middlesex , Yes, Yes
+3/30/2020,Female, 60s, Suffolk , unknown Yes, Yes
+3/31/2020,Male,60s,Middlesex,Yes,Yes
+3/31/2020,Female,80s,Berkshire,Unknown,Yes
+3/31/2020,Female,50s,Essex,Yes,Unknown
+3/31/2020,Male,70s,Hampden,Yes,No
+3/31/2020,Female,90s,Middlesex,No,No
+3/31/2020,Male,60s,Middlesex,Unknown,Yes
+3/31/2020,Male,90s,Essex,Yes,Yes
+3/31/2020,Male,80s,Essex,Yes,Yes
+3/31/2020,Female,90s,Suffolk,Yes,No
+3/31/2020,Male,90s,Hampden,Yes,Yes
+3/31/2020,Male,70s,Franklin,Unknown,Yes
+3/31/2020,Female,80s,Middlesex,Yes,Yes
+3/31/2020,Female,80s,Hampden,Unknown,Yes
+3/31/2020,Male,90s,Norfolk,Yes,Yes
+3/31/2020,Male,70s,Worcester,Yes,Yes
+3/31/2020,Male,80s,Essex,Unknown,Yes
+3/31/2020,Female,90s,Plymouth,Unknown,Unknown
+3/31/2020,Male,70s,Hampshire,Unknown,Yes
+3/31/2020,Male,80s,Worcester,Unknown,Yes
+3/31/2020,Female,60s,Middlesex,Yes,Yes
+3/31/2020,Male,70s,Hampden,Yes,Yes
+3/31/2020,Female,80s,Hampden,Yes,Unknown
+3/31/2020,Male,70s,Norfolk,Unknown,Yes
+3/31/2020,Male,80s,Middlesex,Unknown,Yes
+3/31/2020,Male,80s,Middlesex,Yes,Yes
+3/31/2020,Female,90s,Middlesex,Yes,Yes
+3/31/2020,Female,90s,Essex,Yes,Yes
+3/31/2020,Male,90s,Middlesex,Unknown,Yes
+3/31/2020,Male,80s,Essex,Yes,Unknown
+3/31/2020,Female,100s,Franklin,Unknown,Unknown
+3/31/2020,Male,80s,Hampden,Unknown,Unknown
+3/31/2020,Male,80s,Hampden,Yes,No
+3/31/2020,Male,90s,Plymouth,Yes,Unknown
