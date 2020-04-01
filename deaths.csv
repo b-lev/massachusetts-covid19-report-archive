@@ -1,4 +1,4 @@
-date,gender,age,county,preexisting,hospitalized
+﻿date,gender,age,county,preexisting,hospitalized
 3/25/2020,Male, 80s, Norfolk county, Yes, Yes
 3/25/2020,Male, 80s, Barnstable county, Yes, Yes
 3/25/2020,Male, 70s, Worcester county, Unknown, Yes
@@ -77,3 +77,36 @@ date,gender,age,county,preexisting,hospitalized
 3/31/2020,Male,80s,Hampden,Unknown,Unknown
 3/31/2020,Male,80s,Hampden,Yes,No
 3/31/2020,Male,90s,Plymouth,Yes,Unknown
+04/01/2020,Male,80s,Hampden,Yes,Yes
+04/01/2020,Male,90s,Essex,Yes,Yes
+04/01/2020,Male,70s,Middlesex,Yes,Yes
+04/01/2020,Female,80s,Suffolk,Unknown,Yes
+04/01/2020,Female,70s,Franklin,Yes,Yes
+04/01/2020,Male,30s,Suffolk,Yes,Yes
+04/01/2020,Female,80s,Worcester,Yes,Yes
+04/01/2020,Female,90s,Bristol,Yes,Unknown
+04/01/2020,Female,70s,Suffolk,Yes,Yes
+04/01/2020,Male,80s,Essex,Unknown,Yes
+04/01/2020,Male,80s,Essex,Yes,Yes
+04/01/2020,Female,80s,Hampden,Yes,Yes
+04/01/2020,Female,90s,Hampden,Unknown,Yes
+04/01/2020,Female,70s,Plymouth,Unknown,Yes
+04/01/2020,Female,80s,Norfolk,Unknown,Yes
+04/01/2020,Male,80s,Plymouth,Unknown,Yes
+04/01/2020,Male,70s,Suffolk,Yes,Yes
+04/01/2020,Female,100s,Suffolk,Yes,Unknown
+04/01/2020,Female,90s,Essex,Yes,Yes
+04/01/2020,Female,50s,Barnstable,Unknown,Unknown
+04/01/2020,Male,90s,Hampden,Yes,No
+04/01/2020,Female,60s,Essex,Unknown,No
+04/01/2020,Female,70s,Plymouth,Yes,Yes
+04/01/2020,Female,60s,Worcester,Unknown,Yes
+04/01/2020,Female,90s,Franklin,Unknown,Unknown
+04/01/2020,Female,90s,Suffolk,Unknown,Yes
+04/01/2020,Male,50s,Norfolk,Yes,Unknown
+04/01/2020,Female,60s,Hampden,Unknown,Yes
+04/01/2020,Male,80s,Middlesex,Unknown,Yes
+04/01/2020,Male,80s,Norfolk,Unknown,Yes
+04/01/2020,Male,80s,Suffolk,Yes,Yes
+04/01/2020,Male,80s,Middlesex,Unknown,Yes
+04/01/2020,Male,70s,Franklin,Unknown,Yes
