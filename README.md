@@ -6,7 +6,7 @@ See also: https://b-lev.github.io/covid19-vis/
 
 They keep adding columns, and so the csv does too. My apologies if it breaks your code.
 
-In R, using tidyverse and lubridate packages, you can use to read in the data directly:
+In R, using tidyverse and lubridate packages, you can read in the data directly:
 
 ```
 ma.gov<- read_csv('https://raw.githubusercontent.com/b-lev/massachusetts-covid19-report-archive/master/MA-stats.csv') %>% 
