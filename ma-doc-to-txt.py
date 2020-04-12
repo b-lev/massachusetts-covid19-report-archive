@@ -16,7 +16,7 @@ DEATHS = {'Attributed to COVID-19':'Deaths'}
 AGE = {'≤19 years of age':'age_0-19', '20-29 years of age':'age_20-29', '30-39 years of age':'age_30-39', '40-49 years of age':'age_40-49', '50-59 years of age':'age_50-59', '60-69 years of age':'age_60-69', '70-79 years of age':'age_70-79', '≥ 80 years of age':'age_80-', 'Unknown':'age_unknown'}
 
 LTCF = {'Residents/Healthcare workers of Long-Term Care Facilities':'LTCF_Residents',
-'Long-Term Care Facilities Reporting At Least One Case of COVID-19':'LTCF_one_plus_case', 'Deaths in Long-Term Care Facilities':'LTCF_deaths'}
+'Long-Term Care Facilities Reporting At Least One Case of COVID-19':'LTCF_one_plus_case', 'Deaths Reported in Long-Term Care Facilities':'LTCF_deaths'}
 
 HOSP ={ 'Patient was hospitalized':'Hospitalized_yes', 'Patient was not hospitalized':'Hospitalized_no', 'Under Investigation':'Hospitalized_under_investigation'}
 
@@ -72,7 +72,9 @@ with open('%s.txt' % file[:-5],'r') as fd:
   columns['Deaths'] = lines[cnt]
   print("Deaths:",columns['Deaths'])
   cnt+=1
-  assert lines[cnt] == 'COVID-19 Cases in Long-Term Care Facilities*'
+  while (lines[cnt])=="":
+    cnt+=1
+  assert lines[cnt] == 'COVID-19 Cases in Long-Term Care Facilities*', print("got: ["+lines[cnt]+"]")
   cnt+=1
   while (lines[cnt].strip() != "Hospitalization"):
     if lines[cnt].strip() in LTCF.keys():
@@ -84,7 +86,7 @@ with open('%s.txt' % file[:-5],'r') as fd:
       cnt+=1
 
   cnt+=1
-  while (lines[cnt] != "Total Confirmed Cases and Deaths by Race/Ethnicity"):
+  while (lines[cnt] != "Total Cases and Deaths by Race/Ethnicity"):
     if nonum(lines[cnt].strip()) in HOSP.keys():
       idx = HOSP[nonum(lines[cnt].strip())]
       columns[idx]=lines[cnt+1]
