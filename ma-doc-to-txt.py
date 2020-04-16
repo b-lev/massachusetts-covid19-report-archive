@@ -9,7 +9,7 @@ def nonum(string):
 
 COUNTIES = ['Barnstable', 'Berkshire','Bristol', 'Dukes','Essex','Franklin', 'Hampden', 'Hampshire','Middlesex', 'Nantucket','Norfolk', 'Plymouth','Suffolk', 'Worcester','Unknown']
 
-GENDERS = {'Male':"Gender_Male",'Female':"Gender_Female",'Unknown':"Gender_unknown"}
+GENDERS = {'Female':"Gender_Female",'Male':"Gender_Male",'Unknown':"Gender_unknown"}
 
 DEATHS = {'Attributed to COVID-19':'Deaths'}
 
@@ -75,8 +75,21 @@ with open('%s.txt' % file[:-5],'r') as fd:
   while (lines[cnt])=="":
     cnt+=1
   assert lines[cnt] == 'COVID-19 Cases in Long-Term Care Facilities*', print("got: ["+lines[cnt]+"]")
+  #
+  # cnt+=1
+  # while (lines[cnt] != "Total Cases and Deaths by Race/Ethnicity"):
+  #   if nonum(lines[cnt].strip()) in HOSP.keys():
+  #     idx = HOSP[nonum(lines[cnt].strip())]
+  #     columns[idx]=lines[cnt+1]
+  #     cnt+=2
+  #   else:
+  #     if lines[cnt].strip()!="":
+  #       print("H no parse: ["+lines[cnt]+"]")
+  #   cnt+=1
+
+
   cnt+=1
-  while (lines[cnt].strip() != "Hospitalization"):
+  while (lines[cnt].strip() != "Confirmed Cases"):
     if lines[cnt].strip() in LTCF.keys():
       idx = LTCF[lines[cnt].strip()]
       columns[idx]=lines[cnt+1]
@@ -85,19 +98,7 @@ with open('%s.txt' % file[:-5],'r') as fd:
       print("LTCF no parse: ["+lines[cnt]+"]")
       cnt+=1
 
-  cnt+=1
-  while (lines[cnt] != "Total Cases and Deaths by Race/Ethnicity"):
-    if nonum(lines[cnt].strip()) in HOSP.keys():
-      idx = HOSP[nonum(lines[cnt].strip())]
-      columns[idx]=lines[cnt+1]
-      cnt+=2
-    else:
-      if lines[cnt].strip()!="":
-        print("H no parse: ["+lines[cnt]+"]")
-      cnt+=1
-
-  cnt+=1
-  assert lines[cnt] == 'Confirmed Cases'
+  assert lines[cnt] == 'Confirmed Cases', print("got: ["+lines[cnt]+"]")
   cnt+=4
   while (lines[cnt] != "Total"):
     if nonum(lines[cnt].strip()) in RACE.keys():
@@ -129,9 +130,10 @@ with open('%s.txt' % file[:-5],'r') as fd:
   assert lines[cnt+4]=='Preexisting Conditions'
   assert lines[cnt+5]=='Hospitalized'
   cnt+=5
+  print("Start of deaths:",lines[cnt+1])
   deaths=[]
-  while lines[cnt+1]!='':
-    # print(lines[cnt+1:cnt+6])
+  while lines[cnt+1] in ['Female','Male','Unknown'] :
+    print(lines[cnt+1:cnt+6])
     deaths+=[[lines[cnt+1],lines[cnt+2],lines[cnt+3],lines[cnt+4],lines[cnt+5]]]
     assert lines[cnt+1] in ['Female','Male','Unknown'] , print(lines[cnt+1])
     cnt+=5
@@ -152,7 +154,7 @@ with open('%s.txt' % file[:-5],'r') as fd:
     for x in deaths:
      fd.write(columns['date']+","+",".join(x)+"\n")
 
-  cols = [key for key in list(["date",'confirmed'])+ COUNTIES+list(GENDERS.values())+ list(AGE.values())+list(DEATHS.values())+  list(LTCF.values())+ list(HOSP.values())+ list(["race_confirmed_"+ x for x in RACE.values()]) + list(["race_deaths_"+ x for x in RACE.values()])+ list(['Test_positive','Test_negative'])]
+  cols = [key for key in list(["date",'confirmed'])+ COUNTIES+list(GENDERS.values())+ list(AGE.values())+list(DEATHS.values())+  list(LTCF.values())+ list(["race_confirmed_"+ x for x in RACE.values()]) + list(["race_deaths_"+ x for x in RACE.values()])+ list(['Test_positive','Test_negative'])]
   with open('MA-stats.csv','a') as fd:
     fd.write(",".join([columns[col] for col in cols]))
     fd.write("\n")
